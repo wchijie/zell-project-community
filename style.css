@@ -12,6 +12,12 @@ html, body {
   z-index: 9999;
 }
 
+.top-anomaly {
+  max-width: 940px;
+  margin: 0 15px;
+  padding: 0 0;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -24,7 +30,7 @@ html, body {
   font-weight: 600;
   font-size: 70px;
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -32,7 +38,8 @@ html, body {
 .jumbotron {
   background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.png) no-repeat center center;
   background-size: cover;
-  height: 700px;
+  height: 800px;
+  width: 100%;
 }
 
 
@@ -74,7 +81,7 @@ html, body {
   font-weight: 600;
   font-size: 70px;
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
@@ -88,6 +95,10 @@ html, body {
   padding: 16px 40px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.btn-main:hover {
+  opacity:0.75;
 }
 
 .supporting {
@@ -111,11 +122,11 @@ html, body {
 }
 
 .supporting p {
-  font-weight: 400;
+  font-weight: 800;
   font-size: 14px;
   line-height: 20px;
   padding: 0 50px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .learn {
@@ -130,6 +141,12 @@ html, body {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.learn:hover {
+  background-color:#333333;
+  color:#FFFFFF;
+}
 
 .clearfix {
   clear: both;
