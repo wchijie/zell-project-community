@@ -12,36 +12,11 @@ html, body {
   z-index: 9999;
 }
 
-.top-anomaly {
+.container {
   max-width: 940px;
   margin: 0 15px;
   padding: 0 0;
 }
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.container h1 {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 70px;
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.jumbotron {
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.png) no-repeat center center;
-  background-size: cover;
-  height: 800px;
-  width: 100%;
-}
-
 
 .banner-logo {
   text-align:center;
@@ -69,108 +44,62 @@ html, body {
   height: 30px;
 }
 
-.main {
-  position: relative;
-  top: 180px;
-  text-align: center;
+#sidebar {
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  bottom: 0px;
+  width:350px;
+  height: 100%;
+  background-color:#f5f5f5;
+  z-index: -1;
+  padding: 0 auto;
 }
 
-.main h1 {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 70px;
-  margin-top: 0;
-  margin-bottom: 40px;
-  text-transform: uppercase;
+.team {
+  width:50px;
+  height: auto;
 }
 
-.btn-main {
-  background-color: #333;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1.3px;
-  padding: 16px 40px;
-  text-decoration: none;
-  text-transform: uppercase;
+#content {
+  position: absolute;
+  left: 350px;
+  top: 74px;
+  right: 0px;
 }
 
-.btn-main:hover {
-  opacity:0.75;
+
+#map {
+  background-color:#000000;
+  width: 1010px;
+  height: 449px;
 }
 
-.supporting {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
-.supporting .container {
-  margin: 10px auto 10px auto;
-}
-
-.supporting .col {
-  float: left;
-  width: 33%;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-}
-
-.supporting img {
-  height: 150px;
-}
-
-.supporting p {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 50px;
-  margin-bottom: 10px;
-}
-
-.learn {
+#sidebar h2 {
   color: #333333;
-  border: 1px solid #333333;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 1.3px;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
-}
-
-.learn:hover {
-  background-color:#333333;
-  color:#FFFFFF;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.footer p {
-  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  font-size: 11px;
+  text-align: center;
 }
 
-@media (max-width: 500px) {
-  .main h1 {
-    font-size: 50px;
-    padding: 0 40px;
-  }
+.story {
+  height:220px;
+}
 
-  .supporting .col {
-    width: 100%;
-  }
+.img {
+  text-align: center;  
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 0;
+  margin-bottom: 0px;
+  text-align: center;
 }
