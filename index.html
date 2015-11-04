@@ -5,13 +5,13 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type="text/css" href='style.css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(31.7803, 35.2100),
-          zoom: 13,
+          center: new google.maps.LatLng(31, 35),
+          zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -19,11 +19,11 @@
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
-  <body>
+    <body>
     <div class="header">
       <div class="container">
         <ul class="nav">
-          <a href="http://wchijie.github.io/zell-project/"><li><img src="http://zell.chromaticeuphoria.com/wp-content/uploads/2015/11/logo-without-text-white-31.png"></li></a>
+          <li><img src="http://zell.chromaticeuphoria.com/wp-content/uploads/2015/11/logo-without-text-white-31.png"></li>
           <a href="#plan"><li>Plan</li></a>
           <a href="#stories"><li>Discover</li></a>
           <li>About</li>
@@ -34,7 +34,7 @@
 
     <div id="sidebar">
 
-      <div style="margin: 10px auto 20px auto;">
+      <div id="info" style="margin: 10px auto 20px auto;">
         <table align="center">
           <tr>
             <td colspan="5" style="text-align:left; vertical-align:top;padding-bottom: 10px;"><p>+ Add New Member</p></td>
@@ -47,7 +47,7 @@
             <td><img class="team" src="http://i.imgur.com/h6avx1m.png"></td>
           </tr>
         </table>
-      </div>
+
         <hr style="border:0;min-height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.3)" width="80%">
         <p>Inspiration From:</p>
         <h2>Adventures in Israel</h2>
@@ -55,29 +55,26 @@
         <div class="img">
           <img class="story" align="middle" src="http://i.imgur.com/qRIEPSd.jpg">
         </div>
+      </div>
+
         
-        <div>
-        <table align="center">
-          <tr>
-            <td></td>
-            <td><p>Tel Aviv</p></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><p>Jerusalem</p></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><p>Dead Sea</p></td>
-          </tr>
-        </table>
+        <div id="destinations" style="max-width: 500px; margin-top: 30px;">
+          <p class="location">+Tel Aviv</p></td>
+          <p class="location">+Jerusalem</p></td>
+          <p class="location">+Dead Sea</p></td>
+          <p class="location">+Nazareth</p></td>
+          <p class="location">+IDC Herzliya</p></td>
+          <p class="location">+Akko</p></td>
+          <p class="location">+Negev Desert</p></td>
+          <p class="location">+Galilee</p></td>
+          <p class="location">+Masada</p></td>
         </div>
     </div>
         
         <div id="content">
         <div id="map"></div>
         </div>
-        <div id="footer"></div>
+        <div id="footer"></iframe></div>
 
     <div class="supporting">
       <div class="container">
